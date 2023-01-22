@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RandomCountryApp</string>
+    <string name="shakeInformationCountryRandomizing">Kraj jest losowany...</string>
+    <string name="capitalNotAvailable">Stolica niedostepna</string>
+    <string name="button_text_Search">Wyszukaj w Google</string>
+    <string name="button_text_Randomize">Losuj Panstwo</string>
+    <string name="placeholder_country">Kraj</string>
+    <string name="placeholder_capital">Stolica</string>
+    <string name="textview_text_shake">Potrzasnij telefonem, aby wylosowac</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/default_background_color">
+
+    <TextView
+        android:id="@+id/randomCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:elegantTextHeight="true"
+        android:text="@string/placeholder_country"
+        android:textColor="#4E342E"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/capital"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFlag"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <TextView
+        android:id="@+id/capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/randomCountry"
+        android:layout_centerInParent="true"
+        android:elegantTextHeight="true"
+        android:text="@string/placeholder_capital"
+        android:textSize="25sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/randomCountry" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFlag"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#C5745F"
+        android:text="@string/button_text_Randomize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        app:layout_constraintVertical_bias="0.800" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerInParent="true"
+        android:background="#D35656"
+        android:backgroundTint="#653838"
+        android:text="@string/button_text_Search"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/capital"
+        app:layout_constraintVertical_bias="0.800" />
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="220dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/capital"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toTopOf="@+id/randomCountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtShakeStatus"/>
+
+    <TextView
+        android:id="@+id/txtShakeStatus"
+        android:layout_width="257dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/search"
+        android:layout_centerInParent="true"
+        android:elegantTextHeight="true"
+        android:text="@string/textview_text_shake"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgFlag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
